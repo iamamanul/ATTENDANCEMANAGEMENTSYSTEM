@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaecef;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1), 
+    20px 20px 20px rgba(0, 0, 0, 0.1) ;
+    
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.container img{
+    height: 50px;
+    width: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #7799d7;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.pass{
+    height: 30px;
+    width: 40%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="date"], input[type="time"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus, select:focus {
+    border-color: #7ab6d4;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7ab6d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+section {
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #73bfdb;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #7496d9;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}

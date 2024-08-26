@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System - ZN Softech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <img src="1631350441120.jpg" alt="">
+                Attendance Management System</h1>
+            <h2>ZN Softech</h2>
+        </header>
+
+        <!-- Login Form -->
+        <div id="loginPage">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="pass" type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <div id="loginError" style="color: red; display: none;">Invalid username or password.</div>
+            </form>
+        </div>
+
+        <!-- Main Page Content -->
+        <div id="mainPage" style="display: none;">
+            <!-- Attendance Form -->
+            <form id="attendanceForm">
+                <div class="form-group">
+                    <label for="name">Employee Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Attendance Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="Present">Present</option>
+                        <option value="Absent">Absent</option>
+                        <option value="On Leave">On Leave</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeIn">Time In:</label>
+                    <input type="time" id="timeIn" name="timeIn">
+                </div>
+
+                <div class="form-group">
+                    <label for="timeOut">Time Out:</label>
+                    <input type="time" id="timeOut" name="timeOut">
+                </div>
+
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Logout Button -->
+            <button id="logoutButton">Logout</button>
+
+            <!-- Attendance Records Section -->
+            <section>
+                <h3>Attendance Records</h3>
+                <table id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Date</th>
+                            <th>Time In</th>
+                            <th>Time Out</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Attendance records will be added here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
